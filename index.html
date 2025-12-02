@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>jehad_with_data | Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.1);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1d4ed8 0, #020617 45%, #000 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, rgba(15,23,42,0.96), rgba(15,23,42,0.98));
+      border-radius: 24px;
+      border: 1px solid rgba(148,163,184,0.25);
+      box-shadow: 0 24px 60px rgba(15,23,42,0.9);
+      max-width: 420px;
+      width: 100%;
+      padding: 24px 22px 26px;
+      text-align: center;
+      backdrop-filter: blur(18px);
+    }
+
+    .avatar {
+      width: 92px;
+      height: 92px;
+      border-radius: 999px;
+      border: 2px solid rgba(148,163,184,0.4);
+      overflow: hidden;
+      margin: 0 auto 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 30% 0, #38bdf8, #1d4ed8);
+      color: #0f172a;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 4px;
+    }
+
+    .handle {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .bio {
+      font-size: 0.88rem;
+      color: var(--text);
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 14px;
+      margin-top: 8px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+      border: 1px solid rgba(56,189,248,0.45);
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+    }
+
+    .link-btn span.icon {
+      font-size: 1.15rem;
+      margin-right: 8px;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      background: rgba(56,189,248,0.16);
+      border-color: rgba(56,189,248,0.9);
+      box-shadow: 0 10px 30px rgba(15,23,42,0.85);
+    }
+
+    .link-btn.secondary {
+      background: transparent;
+      border-color: rgba(148,163,184,0.6);
+    }
+
+    .link-btn.secondary:hover {
+      background: rgba(15,23,42,0.75);
+      border-color: rgba(248,250,252,0.8);
+    }
+
+    .footer {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px 18px 22px;
+      }
+      .name {
+        font-size: 1.18rem;
+      }
+      .avatar {
+        width: 82px;
+        height: 82px;
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar">
+      J
+    </div>
+    <h1 class="name">Jehad Magdy</h1>
+    <div class="handle">@jehad_with_data</div>
+    <p class="bio">
+      Data Scientist & AI Instructor.<br>
+      I share content about AI, data, and tech careers.
+    </p>
+
+    <section class="links">
+      <a class="link-btn" href="https://www.youtube.com/@jehad_with_data" target="_blank" rel="noopener">
+        <span class="icon">🎥</span>
+        YouTube Channel
+      </a>
+      <a class="link-btn" href="https://www.instagram.com/jehad_with_data/" target="_blank" rel="noopener">
+        <span class="icon">📸</span>
+        Instagram
+      </a>
+      <a class="link-btn" href="https://www.tiktok.com/@jehad_with_data" target="_blank" rel="noopener">
+        <span class="icon">🎬</span>
+        TikTok
+      </a>
+      <a class="link-btn secondary" href="mailto:jehadsabry@example.com">
+        <span class="icon">📧</span>
+        Email me
+      </a>
+    </section>
+
+    <div class="footer">
+      All my links in one place 💡
+    </div>
+  </main>
+</body>
+</html>
